@@ -65,6 +65,7 @@ router.delete("/cards", async (_, res) => {
 });
 
 router.post("/card", async (req, res) => {
+    console.log(req.body)
     let name = req.body.name;
     let subject = req.body.subject;
     let score = req.body.score;
